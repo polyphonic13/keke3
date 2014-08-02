@@ -265,7 +265,7 @@ module.exports = function(grunt) {
 			}
 			*/
 			server: { 
-				port: 9999,
+				port: 9997,
 				base: 'public',
 				keepAlive: true
 			}
@@ -289,7 +289,7 @@ module.exports = function(grunt) {
 			'clean',
 			'projectBuildSetup', 
 			'concat:project', 
-			// 'stripTraceStatements', 
+			'stripTraceStatements', 
 			'uglify', 
 			'copy:project', 
 			'cssmin', 
